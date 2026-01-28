@@ -71,12 +71,6 @@ https://www.splunk.com/en_us/blog/tips-and-tricks/splunk-validated-architectures
 https://conf.splunk.com/watch/conf-online.html#/
 
 
-UF:
-wget -O splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz "https://download.splunk.com/products/universalforwarder/releases/10.0.0/linux/splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz"
-
-tar -xzvf splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz
-/opt/splunkforwarder/ ⟶ $SPLUNK_HOME
-
 
 Enterprise:
 wget -O splunk-10.0.0-e8eb0c4654f8-linux-amd64.tgz "https://download.splunk.com/products/splunk/releases/10.0.0/linux/splunk-10.0.0-e8eb0c4654f8-linux-amd64.tgz"
@@ -86,23 +80,22 @@ tar -xzvf splunk-10.0.0-e8eb0c4654f8-linux-amd64.tgz
 /opt/splunk/ ⟶ $SPLUNK_HOME
 /opt/splunk/var/lib/splunk ⟶ $SPLUNK_DB
 
+```
+##  Splunk UF installation
+```
+UF:
+wget -O splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz "https://download.splunk.com/products/universalforwarder/releases/10.0.0/linux/splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz"
 
+tar -xzvf splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz
+/opt/splunkforwarder/ ⟶ $SPLUNK_HOME
+```
 
-Splunk Commands:
-
+### Splunk Commands:
+```
 $SPLUNK_HOME/bin/splunk start --accept-license ⟶ This is for first time starting splunk process.
 $SPLUNK_HOME/bin/splunk start
 $SPLUNK_HOME/bin/splunk stop
 $SPLUNK_HOME/bin/splunk restart
 $SPLUNK_HOME/bin/splunk status
 $SPLUNK_HOME/bin/splunk show web-port ( to get web port on which splunk is running)
-
-
-
-
-
-
-
-
 ```
-##  Splunk UF installation
