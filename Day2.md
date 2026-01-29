@@ -75,6 +75,10 @@ https://conf.splunk.com/watch/conf-online.html#/
 Enterprise:
 wget -O splunk-10.0.0-e8eb0c4654f8-linux-amd64.tgz "https://download.splunk.com/products/splunk/releases/10.0.0/linux/splunk-10.0.0-e8eb0c4654f8-linux-amd64.tgz"
 
+
+wget -O splunk-10.2.0-d749cb17ea65-linux-amd64.tgz "https://download.splunk.com/products/splunk/releases/10.2.0/linux/splunk-10.2.0-d749cb17ea65-linux-amd64.tgz"
+
+
 tar -xzvf splunk-10.0.0-e8eb0c4654f8-linux-amd64.tgz
 
 /opt/splunk/ ⟶ $SPLUNK_HOME
@@ -85,6 +89,10 @@ tar -xzvf splunk-10.0.0-e8eb0c4654f8-linux-amd64.tgz
 ```
 UF:
 wget -O splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz "https://download.splunk.com/products/universalforwarder/releases/10.0.0/linux/splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz"
+
+
+wget -O splunkforwarder-10.2.0-d749cb17ea65-linux-amd64.tgz "https://download.splunk.com/products/universalforwarder/releases/10.2.0/linux/splunkforwarder-10.2.0-d749cb17ea65-linux-amd64.tgz"
+
 
 tar -xzvf splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz
 /opt/splunkforwarder/ ⟶ $SPLUNK_HOME
@@ -99,3 +107,9 @@ $SPLUNK_HOME/bin/splunk restart
 $SPLUNK_HOME/bin/splunk status
 $SPLUNK_HOME/bin/splunk show web-port ( to get web port on which splunk is running)
 ```
+
+
+####    Splunk System Requirements:
+- https://help.splunk.com/en/splunk-enterprise/get-started/deployment-capacity-manual/9.4/performance-reference/reference-hardware
+
+![alt text](image-1.png)
