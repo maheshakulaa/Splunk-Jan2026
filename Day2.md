@@ -95,7 +95,7 @@ wget -O splunkforwarder-10.2.0-d749cb17ea65-linux-amd64.tgz "https://download.sp
 
 
 tar -xzvf splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz
-/opt/splunkforwarder/ ⟶ $SPLUNK_HOME
+/opt/splunkforwarder/ ⟶ $SPLUNK_HOMEx`
 ```
 
 ### Splunk Commands:
