@@ -1,4 +1,20 @@
 
+### IMPORTANT NOTE:
+
+- If you are fowarding Deploymentserver data to indexer , Deploymentclient will not be visible in DS. To make it visible in DS
+-   add below configs so that data related to DS and Deployment client will be locally indexed on DS.
+```
+/opt/splunk/etc/system/local/outputs.conf
+[indexAndForward]
+index = true
+selectiveIndexing = true
+```
+
+![alt text](image-6.png)
+https://help.splunk.com/en/splunk-enterprise/administer/update-your-deployment/10.2/configure-the-a…
+----
+----
+#   Steps
 
 1. Install splunk package on the VMs & start splunk (follow best practices)
 2. Configure Deploymentclient on Non DS instances to poll Deployment Server to download configurations
