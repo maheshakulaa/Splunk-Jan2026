@@ -76,6 +76,12 @@ TRANFORMS-route_to_idx2 = route_to_idx2,route_to_apple
 transforms.conf
 [route_to_idx2]
 REGEX = CODE\=A
+DEST_KEY = _TCP_ROUTING_
+FORMAT = idx2group
+
+
+[routetoNullqueeue]
+REGEX = CODE\=A
 DEST_KEY = queue
 FORMAT = nullQueue
 
@@ -128,5 +134,43 @@ IDX1:
 
 =========================================
 IDX2:
+
+```
+
+-----
+https://help.splunk.com/en/data-management/splunk-enterprise-admin-manual/9.1/configuration-file-reference/9.1.1-configuration-file-reference/transforms.conf
+```
+* NOTE: Keys are case-sensitive. Use the following keys exactly as they
+        appear.
+
+queue : Specify which queue to send the event to (can be nullQueue, indexQueue).
+        * indexQueue is the usual destination for events going through the
+          transform-handling processor.
+        * nullQueue is a destination which causes the events to be
+          dropped entirely.
+_raw  : The raw text of the event.
+_meta : A space-separated list of metadata for an event.
+_time : The timestamp of the event, in seconds since 1/1/1970 UTC.
+
+MetaData:Host       : The host associated with the event.
+                      The value must be prefixed by "host::"
+
+_MetaData:Index     : The index where the event should be stored.
+
+MetaData:Source     : The source associated with the event.
+                      The value must be prefixed by "source::"
+
+MetaData:Sourcetype : The source type of the event.
+                      The value must be prefixed by "sourcetype::"
+
+_TCP_ROUTING        : Comma separated list of tcpout group names (from
+                      outputs.conf)
+					  Defaults to groups present in 'defaultGroup' for [tcpout].
+
+_SYSLOG_ROUTING     : Comma separated list of syslog-stanza  names (from
+                      outputs.conf)
+					  Defaults to groups present in 'defaultGroup' for [syslog].
+
+* NOTE: Any KEY (field name) prefixed by '_' is not indexed by Splunk software,   in general.
 
 ```
