@@ -1,6 +1,11 @@
-www1 sshd[4747]: Failed password for invalid user jabber from 118.142.68.222 port 3187 ssh2 www1 sshd[4747]: Failed password for invalid user jabber from 118.142.68.222 port 3187 ssh2 www1 sshd[4747]: Failed password for invalid user jabber from 118.142.68.222 port 3187 ssh2
-hello world
-Splunk sessions
-www1 sshd[4111]: Failed password for invalid user db2 from 118.142.68.222 port 4150 ssh2
-hello world
-Splunk sessions
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: Starting configuration refresh for ens5
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: [get_meta] Querying IMDS for mac
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: Got IMDSv2 token from http://169.254.169.254/latest
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: [get_meta] Querying IMDS for mac
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: Got IMDSv2 token from http://169.254.169.254/latest
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: Using existing cfgfile /run/systemd/network/70-ens5.network
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: [get_meta] Querying IMDS for mac
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: Got IMDSv2 token from http://169.254.169.254/latest
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: [get_meta] Querying IMDS for mac
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: Got IMDSv2 token from http://169.254.169.254/latest
+Feb 19 04:16:25 ip-172-31-34-220 ec2net[42142]: [get_meta] Querying IMDS for network/interfaces/macs/02:9d:1f:85:2f:41/local-ipv4s

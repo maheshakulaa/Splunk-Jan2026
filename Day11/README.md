@@ -1,0 +1,44 @@
+
+
+
+##  RSYSLOG
+
+```
+Installation:(install rsyslog on both servers sender & receiver)
+yum install rsyslog -y
+
+Sender side:
+vi /etc/rsyslog.conf
+*.* @@13.233.138.140:514
+
+
+
+Listener Side:
+uncomment  31,32 OR 36,37 lines
+ 29 # Provides UDP syslog reception
+ 30 # for parameters see http://www.rsyslog.com/doc/imudp.html
+ 31 #module(load="imudp") # needs to be done just once
+ 32 #input(type="imudp" port="514")
+ 33
+ 34 # Provides TCP syslog reception
+ 35 # for parameters see http://www.rsyslog.com/doc/imtcp.html
+ 36 module(load="imtcp") # needs to be done just once
+ 37 input(type="imtcp" port="514")
+
+Add below lines
+vi /etc/rsyslog.d/splunk.conf
+$template SplunkFile, "/opt/testfile.log"
+*.* ?SplunkFile
+
+if $msg contains 'error' then /opt/error.log
+
+
+commands:
+service rsyslog start
+service rsyslog stop
+service rsyslog restart
+```
+
+
+send data from source for testing:
+-   logger "Test message for message 2"
