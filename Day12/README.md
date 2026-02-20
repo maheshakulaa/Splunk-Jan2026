@@ -73,7 +73,7 @@ insert into splunkusers (name, company) values
 ('India','ibm'),
 ('America','xyz'),
 ('Russia','abc');
-
+ 
 
 create user 'splunk_user'@'%' identified by 'Splunk@1234';
 grant all privileges on splunk.* to 'splunk_user'@'%';
