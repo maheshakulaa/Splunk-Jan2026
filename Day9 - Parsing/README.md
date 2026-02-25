@@ -76,7 +76,7 @@ TRANFORMS-route_to_idx2 = route_to_idx2,route_to_apple
 transforms.conf
 [route_to_idx2]
 REGEX = CODE\=A
-DEST_KEY = _TCP_ROUTING_
+DEST_KEY = _TCP_ROUTING
 FORMAT = idx2group
 
 
