@@ -11,6 +11,9 @@ create a dashbaord
 -   stats - count per code and represent in a pie chart
 -   create a trend chart for each code
 
+Configure MC and monitor instances resources, indexing...
+
+
 ----
 ----
 ### Step1:
