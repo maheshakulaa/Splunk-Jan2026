@@ -215,3 +215,7 @@ create below serverclasses in DS and add respective clients and enable splunkd r
 -   idx_base
 -   sh_base
 -   hf_base
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
